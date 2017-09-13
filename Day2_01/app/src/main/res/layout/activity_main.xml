@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/telTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入手机号"/>
+
+    <EditText
+        android:id="@+id/telEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telTitle"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/dxTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入短信内容"
+        android:layout_below="@+id/telEdit"/>
+
+    <EditText
+        android:id="@+id/dxEdit"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_below="@+id/dxTitle"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/info_sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dxEdit"
+        android:text="发送" />
+
+
+
+
+
+</RelativeLayout>
